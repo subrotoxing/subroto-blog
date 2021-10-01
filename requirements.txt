@@ -22,3 +22,4 @@ WTForms==2.3.3
 gunicorn==20.1.0
 python-dotenv==0.17.1
 Unidecode==1.2.0
+psycopg2-binary==2.9.1
