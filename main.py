@@ -69,7 +69,7 @@ class Comment(db.Model):
     post_id = db.Column(db.Integer, db.ForeignKey('blog_posts.id'))
     parent_post = relationship("BlogPost", back_populates='comments')
 
-db.create_all()
+#db.create_all()
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -221,5 +221,6 @@ def delete_post(post_id):
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    #port = int(os.environ.get('PORT', 5000))
+    #app.run(host='0.0.0.0', port=port)
+    app.run()
